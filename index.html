@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratory Exercise 3</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="Web Development Overview.css">
+    <style>
+        body {
+            background-image: url("background.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .hover-underline-animation {
+          display: inline-block;
+          position: relative;
+          color: #0087ca;
+          margin: 22px;
+          padding: 0;
+        }
+
+        .hover-underline-animation:after {
+          content: '';
+          position: absolute;
+          width: 100%;
+          transform: scaleX(0);
+          height: 2px;
+          bottom: 0;
+          left: 0;
+          background-color: orange;
+          transform-origin: bottom right;
+          transition: transform 0.25s ease-out;
+        }
+
+        .hover-underline-animation:hover:after {
+          transform: scaleX(1);
+          transform-origin: bottom left;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="menu-tab">
+        <table>
+            <td style="padding: 0; margin: 0;">
+                <img class="logo" src="logo.png" alt="Your Logo">
+            </td>
+            <td style="padding: 0; margin: 0;">
+                    <form action="/search" method="get" class="search-form">
+                        <input type="text" name="q" class="search-text-input" placeholder="Search">
+                        <button type="submit" class="search-button">
+                            <img src="Button_Icon.jpg" alt="Search Icon">
+                        </button>
+                    </form>
+            </td>
+            <td style="padding: 0; margin: 0;">
+                <nav>
+                    <a href="#home" class="hover-underline-animation" style="color: white;">Home</a>
+                    <a href="#account" class="hover-underline-animation" style="color: white;">Account</a>
+                    <a href="#settings" class="hover-underline-animation" style="color: white;">Settings</a>
+                </nav>
+            </td>
+        </table>
+    </div>
+    <div class="header-display">
+        <h1 style="padding: 40px;S+">Web Development Overview</h1>
+    </div>
+    <div class="header-tab">
+        <nav>
+            <a href="#tutorials" class="hover-underline-animation" style="color: white;">Tutorials</a>
+            <a href="exercises" class="hover-underline-animation" style="color: white;">Exercises</a>
+            <a href="#services" class="hover-underline-animation" style="color: white;">Services</a>
+        </nav>
+    </div>
+    <div class="info-box-container">
+        
+        <div class="info-box-container">
+            <table>
+                <td>
+                    <section id="Introduction">
+                        <h2>Introduction</h2>
+                        <p>In this course, you’ll learn all about becoming a web developer, from the responsibilities that a web developer performs on a day-to-day basis to the set of skills that you’d need to succeed in such a role. And, of course, you’ll also get your hands dirty with code: We’ll introduce you to the fundamental building blocks of the web and make sure you leave this course having developed your very first website!</p>
+                    </section>
+                </td>
+            </table>
+        </div>
+        <br>
+        <div class="info-box-container">
+            <table>
+                <td>
+                    <section id="Main-Info">
+                        <h2>Who is a web developer?</h2>
+                        <p>A web developer is at heart an interactive artist. They’re someone driven by a deep desire to create things. A web developer’s canvas is a user’s web browser.</p>
+
+                        <p>Much like how a curious child takes pleasure in making toys by joining LEGO blocks—and then experiences a similar joy in taking things apart to see how they’re made, a web developer’s job is to use the basic building blocks of the web (like HTML, CSS and JavaScript) to create something complex like a webpage. Don’t sweat it! We’ll get into all of those terms soon.</p>
+
+                        <p>It is also the web developer’s job to diagnose problems in a website’s functionality, to understand how something works by reading the code behind it, and to make changes to fix any issues. That essentially makes web developers the physicians of the world wide web. When we talk about the world wide web, we’re mainly referring to websites and web applications. At this point, the curious aspiring developer in you might be wondering, “What’s the difference between the two?”</p>
+
+                        <p>Well, we’re glad you asked! A website is usually a simple page or a group of pages (the popular web comic site, xkcd, for example). However, modern websites are much more than that. Take Google Docs, for example. It has a nice interface that, once opened, looks very much like a desktop software like Microsoft Office. Such complex websites are often termed web applications. A web developer today is expected to know how to create and work with web applications. Having said that, most people use the terms interchangeably, so don’t get too hung up on the terminology!</p>
+
+                        <img src="web-developer.gif" alt="web developer" style="display: block; margin: auto; margin-bottom: 20px">
+
+                        <h2>Types of Web Developers</h2>
+                        <p>There are different types of web developers who focus on different areas. These include:</p>
+
+                        <p>In a nutshell, I'm a third-year IT student who's excited about what the future holds. I may not have all the answers, but I'm eager to keep learning and growing. I'm looking forward to contributing to meaningful projects in the IT field while staying humble and open to new experiences.</p>
+
+                        <p>There are different types of web developers who focus on different areas. These include:</p>
+
+                        <p>Frontend developers: Frontend developers implement web page designs using HTML and CSS. They make sure the website looks pretty on different devices, and that the forms and buttons work.</p>
+
+                        <p>Backend developers: Backend developers create the backbone of the web application. They write code logic that handles a user’s input (for example, what should happen when you click the signup button after filling in a form).</p>
+
+                        <p>Full stack developers: Full stack developers do bits of both backend and frontend. Depending on the problem at hand, they can switch cape and move stacks. You can learn more about the differences between frontend and backend development in this guide.</p>
+
+                        <p>There are many other specific roles in web development, like system architects, AI, machine learning and security engineers. These roles require more specialized knowledge of one or more of the above types of development, so many professionals in these roles will start by gaining some general web development experience.</p>
+
+                        <h2>What are the skills required to become a web developer?</h2>
+                        <p>What does it take to become a web developer? Essentially, just three things: HTML, CSS and JavaScript—the three pillars of the web, which we’ll be learning about over the next few days. Together, these three pillars make every website work, defining the content to be displayed (HTML), telling a browser how to display that content (CSS), and making the content interactive (JavaScript), respectively.</p>
+
+                        <p>A web developer is well versed in these three technologies. They can read other people’s code and make changes to it. They can find and debug bugs (shortcomings in existing code). A web developer might, at times, work on a new project (a new website) from scratch, or may have to work on an existing website and make it better. A typical day in the life of a web developer involves fixing bugs, developing new features (that is, enhancements) and webpages, and working with other developers to discuss ways to solve problems.</p>
+
+                        <p>Don’t be overwhelmed by all of these details. You’ll soon see that they’re all very connected, and learning one of these automatically makes you good at a few others!</p>
+
+                         <h2>What’s the job outlook like for web developers?</h2>
+                        <p>In short, very good. Employment of web developers is projected to grow 13 percent from 2018 to 2028, much faster than the average for all occupations. Demand will be driven by the growing popularity of mobile devices and ecommerce (Bureau of Labor Statistics). It is a great time to be a web developer as startups are flourishing, which results in above average salaries for web developers in most parts of the world.</p>
+
+                        <p>Also given the nature of the job, finding a remote job as a web developer is easier than many other domains. As a result, it opens up the entire world’s job market to everyone irrespective of where they’re physically located.</p>
+
+                        <h2>Setting up your developer environment</h2>
+                        <p>For this course, we’ll need two tools that every web developer uses:</p>
+
+                        <p>A text editor to write code
+                        A web browser to see what we’re building
+                        While you can use any web browser or text editor, we recommend using Google Chrome and Sublime for this course.</p>
+
+                        <p>You can download it in these link:</p>
+                        <ul>
+                            <li>Google Chrome can be downloaded from: </li>
+                            <a href = "https://www.google.com/chrome/" > https://www.google.com/chrome/ </a>
+                            <br>
+                            <a href = "https://www.sublimetext.com/3" > https://www.sublimetext.com/3 </a>
+                        </ul>
+
+                        <p>Like any good craftsperson, it’s important that you know and understand your tools. For that reason, let’s take a brief look at what we have so far.</p>
+
+                        <h2> Google Chrome </h2>
+                        <p> Google Chrome is a web browser. You may or may not already be using Google Chrome for browsing the web. A web browser allows us to view webpages (similar to the one you’re reading this very text on). We’ll use Google Chrome to view the results after writing and making changes to our code. </p> 
+
+                        <h2> Sublime Text </h2>
+                        <p> Sublime Text is a popular text editor. A text editor is a very aptly named piece of software; it helps us edit text. It is similar to the default text editor that comes preinstalled on Mac or Windows, but has additional features like code highlighting to enhance our coding and debugging experience.<p>
+
+                        <p>Watch out! Sublime Text is a paid software with an unlimited trial period. You’ll occasionally see a dialog box popping up prompting you to pay for the software license. You can pay for it if you wish, but you don’t need to just for this course.<p>
+
+                        <hr><br>
+                        <p> This course is OS independent, meaning that you can follow it on Windows, Mac OS or Linux.<p>
+
+                        <p>Pro tip: If you get stuck when installing Chrome or Sublime, or see any error messages, it is best to do a web search (try a Google or DuckDuckGo search) for the exact error message. It is likely that other people have had the same problem before us and a solution already exists.<p>
+
+                        <p> This course is OS independent, meaning that you can follow it on Windows, Mac OS or Linux.<p>
+
+                        <p>After downloading, install it according to the instructions you’ll find on those websites. Once you’re done installing, you’re ready to move to the next section.<p>
+
+                        <h2> Credits for Resources </h2>
+                        <p> Reference: </p>
+                        <a href = "https://careerfoundry.com/en/tutorials/web-development-for-beginners/introduction-to-web-development/" > https://careerfoundry.com/en/tutorials/web-development-for-beginners/introduction-to-web-development </a> 
+                    </section>
+                </td>
+            </table>
+        </div>
+        <br>
+    </div>
+    <br>
+    <div class="footnote-tab">
+        <p style="color: white;">Web Development (COMP 20163) |  Laboratory Exercise 3 | Created by Daniel Alzona & Sheila Cenita</p>
+    </div>
+</body>
+</html>
